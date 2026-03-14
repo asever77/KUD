@@ -5,8 +5,8 @@
     $plugins.common = {
  
         init: function(){
-            $plugins.uiAjax({ id:'baseHeader', url:'/inc/header.html', page:true, callback:$plugins.common.header });
-            $plugins.uiAjax({ id:'baseFooter', url:'/inc/footer.html', page:true, callback:$plugins.common.footer });
+            $plugins.uiAjax({ id:'baseHeader', url:'./inc/header.html', page:true, callback:$plugins.common.header });
+            $plugins.uiAjax({ id:'baseFooter', url:'./inc/footer.html', page:true, callback:$plugins.common.footer });
             
             console.log('------------------------------------------------------')
             
