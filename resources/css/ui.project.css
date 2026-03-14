@@ -24,8 +24,8 @@
 
 .titimg{position: relative;width:100%; height:300px; text-align: center}
 .titimg:after{content:""; display: block; position: absolute; bottom:53px; width:100%; height:1px; background:rgba(255,255,255,0.3)}
-.titimg.n1{background:url(/resources/img/contents/t_bg1.jpg) no-repeat 50% 0; background-size:cover;}
-.titimg.n2{background:url(/resources/img/contents/t_bg2.jpg) no-repeat 50% 0; background-size:cover;}
+.titimg.n1{background:url(./resources/img/contents/t_bg1.jpg) no-repeat 50% 0; background-size:cover;}
+.titimg.n2{background:url(./resources/img/contents/t_bg2.jpg) no-repeat 50% 0; background-size:cover;}
 
 .titimg-wrap{width:100%; height:300px; max-width:1200px; margin:0 auto; padding:110px 0 0; position: relative;}
 .titimg-wrap h1{color:#fff; font-size: 48px; font-weight: 500}
@@ -50,9 +50,9 @@
 .main-visual .owl-dots .owl-dot{width:60px; height:4px; background:#fff; opacity:0.4; transition:opacity 0.2s ease-in; margin:0 5px;}
 .main-visual .owl-dots .owl-dot.active{opacity:1; height:8px;}
 .main-visual .owl-nav{display:none}
-.main-visual .item.n1{background-image:url(/resources/img/contents/visual_m1.jpg)}
-.main-visual .item.n2{background-image:url(/resources/img/contents/visual_m2.jpg)}
-.main-visual .item.n3{background-image:url(/resources/img/contents/visual_m3.jpg)}
+.main-visual .item.n1{background-image:url(./resources/img/contents/visual_m1.jpg)}
+.main-visual .item.n2{background-image:url(./resources/img/contents/visual_m2.jpg)}
+.main-visual .item.n3{background-image:url(./resources/img/contents/visual_m3.jpg)}
 
 .main-cont{width:100%; position: relative; font-size:17px; padding:75px 0 0;}
 .main-cont .h1{font-size:44px; font-family: 'Roboto'; line-height:1.2}
@@ -73,7 +73,7 @@
 .main-cont li:after{content:""; display:block; position: absolute; bottom:0; left:20px; border-left:1px solid #000; width:1px; height:110px;}
 
 
-.ico-arrow{display:inline-block; vertical-align:middle; width:34px; height:18px; background:url(/resources/img/common/ico_arrow.png) no-repeat 0 0; margin-left:10px}
+.ico-arrow{display:inline-block; vertical-align:middle; width:34px; height:18px; background:url(./resources/img/common/ico_arrow.png) no-repeat 0 0; margin-left:10px}
 
 .greeting-txt{font-size:32px; text-align: center; display:block; padding:50px 0}
 .greeting-txt b{color:#1a6cea}
