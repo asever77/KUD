@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" 	content="IE=edge"> 
+	<meta name="viewport" content="width=1200"> 
+	<title>Company introduction - KUD (주)케이유디</title>
+	
+	<link rel="alternate" href="http://kuds.co.kr" hreflang="x-default" />
+	<link rel="canonical" href="http://kuds.co.kr" />
+	<meta name="description" content="도레이 비드, 도레이 비즈, Toray Beads, NMB MOTOR, NMB STEP MOTOR, NMB FAN" />
+	<meta name="keywords" content="도레이 비드, 도레이 비즈, Toray Beads, NMB MOTOR, NMB STEP MOTOR, NMB FAN" />
+	
+	<meta property="og:title" content="KUD (주)케이유디" />
+	<meta property="og:description" content="도레이 비드, 도레이 비즈, Toray Beads, NMB MOTOR, NMB STEP MOTOR, NMB FAN" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://www.kuds.co.kr/" />
+	<meta property="og:image" content="http://www.kuds.co.kr/img/v2/share_logo.jpg" />
+	<meta property="og:site_name" content="KUD Site" />
+	
+	<meta itemprop="name" content="KUD (주)케이유디" />
+	<meta itemprop="image" content="http://www.kuds.co.kr/img/v2/share_logo.jpg" />
+	<meta itemprop="url" content="http://www.kuds.co.kr/" />
+	<meta itemprop="description" content="도레이 비드, 도레이 비즈, Toray Beads, NMB MOTOR, NMB STEP MOTOR, NMB FAN" />
+	<link href="/css/common.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+		<script src="/js/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	
+	<div class="wrap">
+		<header class="layout_header k" id="header">
+			<div class="nav_box">
+				<h1><a href="index.html"><img src="/img/v2/logo.png" alt="KUD"></a></h1>
+				<nav>
+					<ul>
+					<li><a href="introduction.html">Company introduction</a></li>
+					<li><a href="line.html">Business line</a></li>
+					<li><a href="department.html">Business department</a></li>
+					</ul>
+				</nav>
+			</div>
+			<h2>Company Introduction</h2>
+		</header>
+		
+		<section class="layout_conts" id="conts">
+			<section>
+				<h1 class="s_h1">KUD 소개</h1>
+				<p class="p_tit">KUD는 <strong>높은 품질의 제품 수입 및 조달</strong>을 통해 국내 고객사에 납품을 하고 있습니다.</p>
+				<div style="float:left; width:580px">
+					<p>KUD 소재사업부는 일본 도레이사의 세라믹팀 국내 대리점으로 현재 삼성, LG를 메인 고객사로 국내 100여 고객사에 제품을 납품하고 있습니다.</p>
+					<p>KUD 전자기계 사업부는 일본 NMB사의 BLDC MOTOR, STEPPING MOTOR, FAN 품목을 국내 정식 취급점이며, 그 외에도 높은 품질을 보유하고 있는 국내 BLDC MOTOR, ENCODER, SMPS 제품을 고객사에 납품을 하고 있습니다.</p>
+					<p>KUD는 앞으로도 높은 품질과 서비스로 고객사 여러분께 만족감을 안겨드릴 수 있도록 최선을 다하겠습니다.</p>
+					<p>많은 성원 부탁드리겠습니다.</p>
+				</div>
+				<div style="float:right;">
+					<img src="/img/v2/intro_1.png" alt="고객사 (samsung, lg) 로고">
+				</div>
+			</section>
+			
+			<section>
+				<h1 class="s_h1">KUD 조직도</h1>
+				<div class="org_chart">
+					<ul>
+					<li class="chart_1"><span>대표이사</span>
+						<ul class="chart_2">
+						<li>기술고문</li>
+						<li>전략기획실</li>
+						</ul>
+						
+						<ul class="chart_3">
+						<li>기술<br>지원팀</li>
+						<li>경영<br>지원팀</li>
+						<li>국내<br>사업팀</li>
+						<li>해외<br>사업팀</li>
+						</ul>
+					</li>
+					</ul>
+				</div>
+			</section>
+			
+			<section>
+				<h1 class="s_h1">KUD 찾아오시는 길</h1>
+				<div id="map_daum" class="kud_map"></div>
+					<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=cfecbb8fda5b09717653fae78202c3f7&libraries=services"></script>
+					<script>
+						var mapContainer = document.getElementById('map_daum'), // 지도를 표시할 div 
+							mapOption = {
+								center: new daum.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+								level: 3 // 지도의 확대 레벨
+							};  
+						
+						// 지도를 생성합니다    
+						var map = new daum.maps.Map(mapContainer, mapOption); 
+						// 주소-좌표 변환 객체를 생성합니다
+						var geocoder = new daum.maps.services.Geocoder();
+						// 주소로 좌표를 검색합니다
+	
+						geocoder.addressSearch('서울특별시 성동구 연무장5가길 7', function(result, status) {
+
+							// 정상적으로 검색이 완료됐으면 
+							if (status === daum.maps.services.Status.OK) {
+
+								var coords = new daum.maps.LatLng(result[0].y, result[0].x);
+
+								// 결과값으로 받은 위치를 마커로 표시합니다
+								var marker = new daum.maps.Marker({
+									map: map,
+									position: coords
+								});
+
+								// 인포윈도우로 장소에 대한 설명을 표시합니다
+								var infowindow = new daum.maps.InfoWindow({
+									content: '<div style="padding:5px;">KUD : 성수역현대테라스타워 E1107호, E1108호</div>'
+								});
+								infowindow.open(map, marker);
+
+								// 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+								map.setCenter(coords);
+							} 
+						});       
+					</script>
+					
+					<p>
+					서울특별시 성동구 연무장5가길 7, E1107호, E1108호(성수동2가, 성수역현대테라스타워)<br>
+					Tel : 02-3390-4955<br>
+					Fax : 02-3390-4956<br>
+					E-mail : sales@kuds.co.kr
+					</p>
+			</section>
+		</section>
+		
+		<footer class="layout_footer">
+			<div class="address">
+				<p>
+					(주)케이유디 <br> 
+					서울특별시 성동구 연무장5가길 7, E1107호, E1108호(성수동2가, 성수역현대테라스타워) <br> 
+					사업자등록번호 : 505-87-00239<br><br>
+					Copyright © 2017 KUD All Rights Reserved.
+				</p>
+				<p class="contact">
+					Tel  : 02-3390-4955 &nbsp;&nbsp;&nbsp;&nbsp;
+					Fax : 02-3390-4956 &nbsp;&nbsp;&nbsp;&nbsp;
+					E-mail : sales@kuds.co.kr
+				</p>
+			</div>
+		</footer>
+	</div>
+	
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="/js/common.js"></script>
+	<script>
+	(function ($) {
+		
+	}(jQuery));
+
+	</script>
+</body>
+</html>
